@@ -8,14 +8,17 @@
 void main()
 {
     char s[200];
-    int count = 0, i;
+    int count = 0, i, n;
  
-    printf("enter the string\n");
+ scanf("%d", &n);
+ for(i=0;i<n;i++){
     scanf("%[^\n]s", s);
     for (i = 0;s[i] != '\0';i++)
     {
         if (s[i] == ' ')
             count++;    
     }
+  }
     printf("number of words in given string are: %d\n", count + 1);
+
 }
