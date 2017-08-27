@@ -32,7 +32,7 @@ int main(){
 		fgets(str, sizeof(str), stdin);
 		ptr = strtok(str, ","); hapuschar(ptr, '"'); strcpy(dt[i].nama, ptr);
 		ptr = strtok(NULL, ","); hapuschar(ptr, '"'); strcpy(dt[i].nim, ptr);
-		usia = strtok(NULL, ","); dt[i].usia = atoi(ptr);
+		usia = strtok(NULL, ","); dt[i].usia = atoi(usia);
 		jenkel  = strtok(NULL, ","); dt[i].jenkel  = atoi(jenkel);
 		nilai = strtok(NULL, ","); dt[i].nilai = atof(nilai);
 		i++;
